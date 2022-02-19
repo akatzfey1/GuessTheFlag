@@ -9,16 +9,15 @@
 /* Begin PBXBuildFile section */
 		9262FDC527C05E3E00E261AE /* GuessTheFlagApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9262FDC427C05E3E00E261AE /* GuessTheFlagApp.swift */; };
 		9262FDC727C05E3E00E261AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9262FDC627C05E3E00E261AE /* ContentView.swift */; };
-		9262FDC927C05E3E00E261AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9262FDC827C05E3E00E261AE /* Assets.xcassets */; };
-		9262FDCC27C05E3E00E261AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9262FDCB27C05E3E00E261AE /* Preview Assets.xcassets */; };
+		9262FDD627C069B700E261AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9262FDD527C069B700E261AE /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9262FDC127C05E3E00E261AE /* GuessTheFlag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheFlag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9262FDC427C05E3E00E261AE /* GuessTheFlagApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagApp.swift; sourceTree = "<group>"; };
 		9262FDC627C05E3E00E261AE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		9262FDC827C05E3E00E261AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9262FDCB27C05E3E00E261AE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9262FDD427C0681B00E261AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../HackingWithSwift-main/SwiftUI/project2/GuessTheFlag/Assets.xcassets"; sourceTree = "<group>"; };
+		9262FDD527C069B700E261AE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Preview Assets.xcassets"; path = "../../../../HackingWithSwift-main/SwiftUI/project2/GuessTheFlag/Preview Content/Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +52,7 @@
 			children = (
 				9262FDC427C05E3E00E261AE /* GuessTheFlagApp.swift */,
 				9262FDC627C05E3E00E261AE /* ContentView.swift */,
-				9262FDC827C05E3E00E261AE /* Assets.xcassets */,
+				9262FDD427C0681B00E261AE /* Assets.xcassets */,
 				9262FDCA27C05E3E00E261AE /* Preview Content */,
 			);
 			path = GuessTheFlag;
@@ -62,7 +61,7 @@
 		9262FDCA27C05E3E00E261AE /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				9262FDCB27C05E3E00E261AE /* Preview Assets.xcassets */,
+				9262FDD527C069B700E261AE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -125,8 +124,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9262FDCC27C05E3E00E261AE /* Preview Assets.xcassets in Resources */,
-				9262FDC927C05E3E00E261AE /* Assets.xcassets in Resources */,
+				9262FDD627C069B700E261AE /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +275,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,6 +305,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
