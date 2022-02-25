@@ -7,6 +7,20 @@
 
 import SwiftUI
 
+struct BlueTitleModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.largeTitle.bold())
+            .foregroundColor(.blue)
+    }
+}
+
+extension View {
+    func blueTitle() -> some View {
+        modifier(BlueTitleModifier())
+    }
+}
+
 struct FlagImage: View {
     var img: String
     
