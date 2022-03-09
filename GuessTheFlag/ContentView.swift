@@ -43,6 +43,12 @@ struct ContentView: View {
     @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
     @State private var correctAnswer = Int.random(in: 0...2)
     
+    @State private var animationAmount = 0.0
+    @State private var opacityAmount = 1.0
+    @State private var scaleAmount = 1.0
+    @State private var flagNumTapped = 0
+
+    
     var body: some View {
         ZStack {
             RadialGradient(stops: [
@@ -79,9 +85,17 @@ struct ContentView: View {
                     ForEach(0..<3) { number in
                         Button {
                             flagTapped(number)
+                            withAnimation {
+                                animationAmount += 360
+                                opacityAmount = 0.25
+                                scaleAmount = 0.75
+                            }
                         } label: {
                             FlagImage(img: countries[number])
                         }
+                        .rotation3DEffect(number == flagNumTapped ? .degrees(animationAmount) : .degrees(0), axis: (x: 0, y: 1, z: 0))
+                        .opacity(number != flagNumTapped ? opacityAmount : 1.0)
+                        .scaleEffect(number != flagNumTapped ? scaleAmount : 1.0)
                     }
                 }
                 .frame(maxWidth: .infinity)
@@ -121,7 +135,7 @@ struct ContentView: View {
         } else {
             scoreTitle = "Wrong! That's the flag of \(countries[number])"
         }
-        
+        flagNumTapped = number
         showingScore = true
     }
     
@@ -135,6 +149,8 @@ struct ContentView: View {
                 randomizeQuestion()
             }
             
+            scaleAmount = 1.0
+            opacityAmount = 1.0
             currentQuestion += 1
         }
     }
@@ -144,6 +160,9 @@ struct ContentView: View {
         playerScore = 0
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
+        animationAmount = 0.0
+        opacityAmount = 1.0
+        scaleAmount = 1.0
     }
     
     func randomizeQuestion() {
